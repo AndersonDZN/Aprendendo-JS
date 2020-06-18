@@ -1,0 +1,90 @@
+    s.length: para saber quantos caracteres a string tem
+
+    s.toUpperCase(): passar tudo para maiusculo
+
+    s.toLowerCase(): passar tudo para minusculo
+
+    string(s): para converter dados para string por exemplo um numero armazenado na variavel s para string
+
+    n1.toFixed(2): para converter um numero com 2 casas apos a virgula
+
+    n1.toFixed(2).replace('.',',') : para trocar a formatação do numero com ponto para virgula
+
+    n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL' }): converte para real
+
+    operadores
+
+    +: soma
+    -: subtração
+    *: multiplicação
+    /: divisão
+    %: resto a divisão
+    **: potência
+
+    ordem de precedência
+
+    1 ()
+    2 **
+    3 *, /, %
+    4 +, -
+
+    operadores relacionais
+
+    > : maior
+    < : menor
+    >= : maior ou igual
+    <= : menor ou igual
+    == : igual
+    != : diferente
+
+    operadores logicos e ordem de precedência
+   1 ! : negação
+   2 && : conjunção (e)
+   3 || : dijunções (ou)
+
+    ordem de precedência quando há operadores aritmeticos, relacionais e logicos na mesma frase
+
+    1 primeiro os aritmeticos
+    2 relacionais
+    3 logicos
+
+    operadores ternario
+
+    ? 
+    :
+
+    teste ? true : false
+
+    exemplo
+
+    var n = 2 
+    var m = 1
+    var res = n > m ? 'Sim é' : 'Não é'
+    
+
+    condições
+
+    if(condição){
+        true
+    }else{
+        false
+    }
+
+    tipos de condições
+
+    condição simples composta por um tipo de bloco apenas 
+
+    if(condição){
+        true
+    }
+
+    composta 
+    
+     if(condição){
+        true
+    }else{
+        false
+    }
+
+
+

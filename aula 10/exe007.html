@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando numeros</title>
+    <style>
+        body{
+            font-size: 20pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #content{
+            position: relative;
+            background-color: teal;
+            width: 500px;
+            height: 200px;
+            left: 400px;
+            
+        }
+        #somar{
+            background-color: tomato;
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+        }
+        #somar:hover{
+            background-color: rgb(114, 22, 6);
+        }
+        #n1, #n2{
+            position: relative;
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Somando valores</h1> 
+        <input type="number" name="numero" id="n1"> + 
+        <input type="number" name="numero2" id="n2">
+        <input type="button" value="somar" id="somar">
+        <div id="res">
+            <h3>Resultado</h3>
+        </div>
+    </div>
+
+   <script>
+       var somar = document.getElementById('somar');
+       somar.addEventListener('click', conta);
+        function conta(){
+            var con1 = document.getElementById('n1');
+            var con2 = document.getElementById('n2');
+            var res = document.getElementById('res');
+            var conv1 = Number(con1.value);
+            var conv2 = Number(con2.value);
+            var s = conv1 + conv2
+
+            res.innerHTML = ` A soma entre ${conv1} e ${conv2} é <strong> ${s} </strong>`
+        }
+       
+   </script>
+</body>
+</html>

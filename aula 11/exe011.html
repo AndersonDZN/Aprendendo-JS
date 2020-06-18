@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+
+    <style>
+        
+        .content{
+            position: relative;
+            background-color: teal;
+            width: 500px;
+            height: 200px;
+            color: whitesmoke;
+            left: 400px;
+            font-size: 20pt;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #res{
+            background-color: rgb(43, 66, 66);
+        }
+        #nasc{
+            position: relative;
+            height: 30px;
+            border-radius: 8px;
+            left: 80px;
+        }
+        #enviar{
+            position: relative;
+            left: 90px;
+            height: 37px;
+            border-radius: 8px;
+            background-color: rgb(207, 106, 11);
+            pointer-events: stroke;
+        }
+        #enviar:hover{
+            background-color: rgb(83, 59, 13);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Em que país você Nasceu?</h1>
+
+        <input type="text" name="txt" id="nasc" placeholder="digite o nome do país onde nasceu">
+
+        <input type="button" value="Enviar" id="enviar">
+
+        <div id="res">
+            <h3>Resultado do teste</h3>
+        </div>
+    </div>
+    
+
+  
+
+    <script>
+        var enviar = document.querySelector('#enviar');
+        enviar.addEventListener('click', nascTest);
+
+        function nascTest(){
+            var valor = document.querySelector('#nasc');
+            var res = document.querySelector('#res');
+            var result = valor.value.toUpperCase();
+
+            res.innerHTML = `Você nasceu no(a) ${result} `
+
+            if(result != 'BRASIL'){
+                res.innerHTML += 'Você é estrangeiro Burguês safado '
+            }else{
+                res.innerHTML += 'Você é Brasileirinho pode, sorrir!'
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>
